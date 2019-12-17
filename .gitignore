@@ -1,0 +1,5 @@
+node_modules
+dist
+src/setting.js
+yarn-error.log
+/src/generated/graph.json

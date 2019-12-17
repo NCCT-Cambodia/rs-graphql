@@ -1,0 +1,34 @@
+{
+  "name": "rs-graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/NCCT-Cambodia/rs-graphql.git",
+  "author": "rathpanha <dev@rathpanha.com>",
+  "license": "MIT",
+	"scripts": {
+    "dev": "nodemon --watch src src/index.ts --exec babel-node --extensions=\".js,.ts\"",
+    "build": "babel src -d dist --extensions=\".js,.ts\"",
+    "start": "node dist/index.js",
+    "gen:graph": "ts-node framework/generate_graph_type.ts"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/mysql2": "types/mysql2",
+    "apollo-server": "^2.4.8",
+    "graphql": "^14.2.1",
+    "md5": "^2.2.1",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.26",
+    "mysql2": "^1.6.5",
+    "nodemon": "^1.19.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "typescript": "^3.4.5"
+  }
+}
