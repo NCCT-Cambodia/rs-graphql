@@ -22,7 +22,7 @@ const server = new ApolloServer({
     const rsPool = new DatabasePool(pool_rs);
 
     return {
-      adsPool: rsPool
+      rsPool: rsPool
     }
   }
 });

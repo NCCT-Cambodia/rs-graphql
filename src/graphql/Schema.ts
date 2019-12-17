@@ -1,4 +1,5 @@
 import { gql } from "apollo-server";
+import { OrganizationSchema, OrganizationGraphResolvers } from "./Organization/OrganizationSchema";
 
 const BASE_SCHEMA = gql`
   type Query {
@@ -38,9 +39,10 @@ const BASE_SCHEMA = gql`
 `;
 
 export const AppSchema = [
-  BASE_SCHEMA
+  BASE_SCHEMA,
+  OrganizationSchema
 ]
 
 export const AppResolvers = [
-
+  OrganizationGraphResolvers
 ]
