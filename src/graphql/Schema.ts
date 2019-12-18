@@ -4,21 +4,10 @@ import { OrganizationSchema, OrganizationGraphResolvers } from "./Organization/O
 const BASE_SCHEMA = gql`
   type Query {
     _empty: String
-    me: User
   }
 
   type Mutation {
     _empty: String
-  }
-
-  type User {
-    id: String
-    username: String
-    name: LanguageFormat
-    role: String
-    profilePicture: String
-    superPermission: Boolean
-    permissions: [String]
   }
 
   type LanguageFormat {
